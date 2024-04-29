@@ -98,6 +98,12 @@ body {
 	color: var(--black);
 	text-decoration: none;
 	cursor: pointer;
+	transition: color 200ms ease-in;
+}
+
+.title:hover,
+.title:active {
+	color: var(--yellow);
 }
 
 .desc {
@@ -118,5 +124,32 @@ body {
 	h2 {
 		font-size: var(--body-sm);
 		font-weight: 800;
+	}
+}
+
+/* Media Queries */
+@media (min-width: 640px) {
+	.card {
+		width: 356px;
+		box-shadow: 12px 12px var(--black);
+	}
+
+	.image {
+		img {
+			width: 308px;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.card {
+		width: 384px;
+		box-shadow: 16px 16px var(--black);
+	}
+
+	.image {
+		img {
+			width: 336px;
+		}
 	}
 }
