@@ -1,0 +1,122 @@
+/* Fonts */
+@font-face {
+	font-family: 'Figtree';
+	src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+	src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+/* Variables */
+:root {
+	/* Primary */
+	--yellow: hsl(47, 88%, 63%);
+	/* Neutral */
+	--white: hsl(0, 0%, 100%);
+	--grey: hsl(0, 0%, 50%);
+	--black: hsl(0, 0%, 7%);
+	/* Typography */
+	--heading: clamp(1.25rem, 1.162rem + 0.3756vw, 1.5rem);
+	--body-md: clamp(0.875rem, 0.831rem + 0.1878vw, 1rem);
+	--body-sm: clamp(0.75rem, 0.706rem + 0.1878vw, 0.875rem);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default spacing in favour of better control in authored CSS */
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--yellow);
+	font-family: 'Figtree', sans-serif;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 1.5rem;
+	padding: 1.5rem;
+	width: 327px;
+	background-color: var(--white);
+	border: 1px solid var(--black);
+	border-radius: 20px;
+	box-shadow: 8px 8px var(--black);
+}
+
+.image {
+	img {
+		height: 200px;
+		width: 279px;
+		object-fit: cover;
+		border-radius: 10px;
+	}
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 0.75rem;
+}
+
+.category {
+	padding: 0.25rem 0.75rem;
+	background-color: var(--yellow);
+	border-radius: 4px;
+	color: var(--black);
+	font-size: var(--body-sm);
+	font-weight: 800;
+}
+
+.date {
+	font-size: var(--body-sm);
+}
+
+.title {
+	font-size: var(--heading);
+	font-weight: 800;
+	color: var(--black);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.desc {
+	font-size: var(--body-md);
+	color: var(--grey);
+}
+
+.author {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+
+	img {
+		height: 32px;
+		width: 32px;
+	}
+
+	h2 {
+		font-size: var(--body-sm);
+		font-weight: 800;
+	}
+}
