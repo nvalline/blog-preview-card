@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://nv-blog-preview-card.netlify.app/)
+- Solution URL: [Here](https://www.frontendmentor.io/solutions/blog-preview-card-w-clamp-F3FyLUDt9o)
+- Live Site URL: [Here](https://nv-blog-preview-card.netlify.app/)
 
 ## My process
 
@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-WOrking through this project continued to engrain the Frontend Mentor process as well as further build upon my HTML & CSS skills.
+Working through this project continued to engrain the Frontend Mentor process as well as further build upon my HTML & CSS skills.
 
 I took to opportunity to implement CSS clamp(), which is a feature that I have struggled to wrap my head around. I also utilized transition for the hover effect.
 

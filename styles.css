@@ -45,7 +45,7 @@ body {
 	background-color: var(--yellow);
 	font-family: 'Figtree', sans-serif;
 	font-weight: 500;
-	line-height: 1.25;
+	line-height: 1.5;
 }
 
 .card {
@@ -63,7 +63,8 @@ body {
 	transition: box-shadow 200ms ease-in;
 }
 
-.card:hover {
+.card:hover,
+.card:active {
 	box-shadow: 16px 16px var(--black);
 }
 
