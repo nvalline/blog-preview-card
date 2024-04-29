@@ -60,6 +60,11 @@ body {
 	border: 1px solid var(--black);
 	border-radius: 20px;
 	box-shadow: 8px 8px var(--black);
+	transition: box-shadow 200ms ease-in;
+}
+
+.card:hover {
+	box-shadow: 16px 16px var(--black);
 }
 
 .image {
@@ -144,7 +149,6 @@ body {
 @media (min-width: 1024px) {
 	.card {
 		width: 384px;
-		box-shadow: 16px 16px var(--black);
 	}
 
 	.image {
